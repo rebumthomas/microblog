@@ -14,7 +14,7 @@
 # data "aws_eks_cluster_auth" "EKS-Lab-cluster"{
 #   name = module.eks.cluster_id
 # }
-
+# define EKS module 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 18.0"
