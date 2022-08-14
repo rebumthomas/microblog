@@ -14,5 +14,3 @@ flask db init
 flask db migrate -m "posts table'
 flask db upgrade
 flask run
-
-Trial line of code!
