@@ -21,7 +21,7 @@ module "eks" {
   # insert the 7 required variables here
 
   cluster_version = "1.22"
-  cluster_name    = "EKS-Lab"
+  cluster_name    = "EKS-Lab1"
   # get vpc_id, subnets from VPC module
   vpc_id          = module.EKS-Lab-vpc.vpc_id
   subnet_ids      = module.EKS-Lab-vpc.private_subnets

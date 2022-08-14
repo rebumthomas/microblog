@@ -2,11 +2,11 @@ terraform {
     // reference: https://www.terraform.io/language/settings/backends/s3
     // you have to create a bucket mannually in AWS S3 before applying this script
     backend "s3" {
-        bucket = "weclouddata-devops-microblog-2"
+        bucket = "weclouddata-devops-microblog-3"
         key = "microblog/terraform.tfstate"
         region = "us-east-1"
-        shared_credentials_file = "/Users/daweizhang/.aws/config"
-        profile = "beamdata-dawei"
+        shared_credentials_file = "/Users/rebuthomas/.aws/config"
+        profile = "RebuT"
     }
     required_providers {
         aws = {
@@ -17,9 +17,9 @@ terraform {
 }
 provider "aws" {
     # location of your credential
-    shared_credentials_file = "/Users/daweizhang/.aws/config"
+    shared_credentials_file = "/Users/rebuthomas/.aws/config"
     # name of your profile
-    profile = "beamdata-dawei"
+    profile = "RebuT"
     # region
     region = "us-east-1"
 }

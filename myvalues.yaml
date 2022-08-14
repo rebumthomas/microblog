@@ -1,5 +1,5 @@
 appName: microblog
-appImage: junglepolice/microblog
+appImage: beccaauh/microblog
 appVersion: 0.2.0
 appReplicas: 1
 containerPort: 5000
